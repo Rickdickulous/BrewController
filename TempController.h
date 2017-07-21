@@ -1,6 +1,5 @@
 #ifndef TempController_h
 #define TempController_h
-#endif // TempController
 
 #include "Arduino.h"
 
@@ -18,8 +17,8 @@ public:
     //y = -26.65ln(Rt) + 271.11                 // dave's notes
 
     //y = 2.7552x - 279.15                      // dave's notes
-    float convertInputToTemp_f(float);
-    float convertInputToTemp_c(float);
+    float convertInputToTemp_F(float);
+    float convertInputToTemp_C(float);
     float cToF(float);
     ~TempController(void);
 
@@ -28,3 +27,4 @@ private:
     const int R1 = 10180;
 
 };
+#endif // TempController
